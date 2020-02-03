@@ -11,6 +11,6 @@ public final class Palindromes {
   }
 
   public static boolean isPalindrome(String source) {
-    source.toLowerCase();
+    return isPalindromeClean(source.replaceAll("[\\W_]+", "").toLowerCase());
   }
 }
